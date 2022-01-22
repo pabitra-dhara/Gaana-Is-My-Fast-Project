@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            website layout with image gallery
+        </title>
+        <style>
+            body{
+                margin: 0;
+             background:  linear-gradient(to right, #FFAAAA, #734C8F);   
+            }
+            nav{
+                background: #594848;
+                width: 100%;
+                height: 60px;
+                position: fixed;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            li{
+                float: left;
+            }
+            #logo{
+                font-size: 40px;
+                margin-top: 2px;
+                font-family: Comic Sans MS;
+                color: white;
+            }
+            #logo2{
+                font-size: 40px;
+                margin-top: 2px;
+                font-family: Comic Sans MS;
+                color: red;
+            }            
+            nav{
+                font-size: 30px;
+                text-align: center;
+                padding-top: none;
+                z-index: 100;
+                
+            }
+            #search-box{
+                width:450px;
+                height:40px;
+                border-style:none;
+                box-sizing:border-box;
+                float:left;
+                padding:5px;
+                font-size:15px; 
+                margin-top:9px;
+                border-radius: 6px;
+            }
+            #search-btn
+            {
+            border-style:none;
+            height:40px;
+            width:100px;
+            box-sizing:border-box;
+            float:left;
+            margin-left:3px;
+            background-color:white;
+            margin-top:9px;
+            border-radius: 6px;
+            }
+            nav a{
+                width: 120px;
+                display: block;
+                text-decoration: none;
+                text-align: center;
+                background: #594848;
+                font-size: 17px;
+                color: white;
+                padding: 20px 10px;
+                font-family: Arial;
+            }
+            nav a:hover{
+                background: skyblue;
+                color: black;
+            }
+            nav input[type=text]{
+                 float: center;
+                 padding: 6px;
+                 border: none;
+                 margin-top: 13px;
+                 margin-right: 16px;
+                 font-size: 17px;
+            }
+            .container{
+                max-width:2500px;
+                margin: auto;
+                background: #f2f2f2;
+                overflow: auto;
+            }
+            .gallery{
+                margin:5px;
+                border: 1px solid #ccc;
+                float:left;
+                width:290px;
+            }
+            .gallery img{
+                width:300px;
+                height:auto;
+            }
+            #new-releases{
+                padding-top: 230px;
+            }
+            .desc{
+                padding: 15px;
+                text-align: center;
+            }
+            .end
+            {
+                width:100%;
+                height:350px;
+                box-sizing:border-box;
+                background-color: rgb(41, 39, 39);
+                padding:30px;
+                color:#f2f2f2;
+                font-family: Comic Sans MS;
+                
+            }
+            table{
+                padding-left: 180px;
+                
+            }
+            .list{
+                list-style: none;
+            }
+        </style>
+        <link rel="stylesheet" href="style1.css">
+        <link rel="stylesheet" href="website-font.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+              <li id="logo">Gaana</li>
+              <li id="logo2">World</li>
+              <li><a href="weblayout.html">Home</a></li>
+              <li><a href="D:\practice\Ganna World\new\new-songs.html">New Songs</a></li>
+              <li><a href="D:\practice\Ganna World\Old Song\old.html">Old Songs</a></li>
+              <li><a href="D:\practice\Ganna World\video page\video.html">Video</a></li>
+              <input type="search" name="search" id="search-box" placeholder="Type Something to Search..." />
+              <input type="submit" value="Search Now" id="search-btn" />
+              <li><a href="D:\practice\Ganna World\login & sign up page\login.html">Login/SignUp</a></li>
+              <li><a href="D:\practice\Ganna World\contact page\contact.html">Contact Us</a></li>
+        </nav>
+
+        <div class="container2">
+            <div class="wrapper">
+                <img src="D:\practice\Ganna World\banner\BANNER1.jpg" id="banner">
+                <img src="D:\practice\Ganna World\banner\BANNER2.jpg" id="banner">
+                <img src="D:\practice\Ganna World\banner\BANNER3.jpg" id="banner">
+                <img src="D:\practice\Ganna World\banner\BANNER4.jpg" id="banner">
+            </div>
+        </div>
+
+        <header>
+            <h4 id="new-releases">New Releases</h4>
+        </header>
+        <main>
+            <div class="box">
+            <div class="photo"><a href="D:\practice\Ganna World\new releases\new-english.html"><img src="D:\practice\Ganna World\new releases\english.jpg"></a></div>
+                <div class="desc">New English...</div>
+        </div>
+        <div class="box">
+            <div class="photo"><a href="D:\practice\Ganna World\new releases\new-hindi.html"><img src="D:\practice\Ganna World\new releases\hindi.jpg"></a></div>
+            <div class="desc">New Hindi</div>
+    </div>
+    <div class="box">
+        <div class="photo"><a href="D:\practice\Ganna World\new releases\new-bengali.html"><img src="D:\practice\Ganna World\new releases\bengali.jpg"></a></div>
+        <div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\new releases\new-punjabi.html"><img src="D:\practice\Ganna World\new releases\panjbi.jpg"></a></div>
+    <div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\new releases\new-tamil.html"><img src="D:\practice\Ganna World\new releases\tamil.jpg"></a></div>
+    <div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Top Charts</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><a href="D:\practice\Ganna World\weekly top\weekly-top-english.html"><img src="D:\practice\Ganna World\weekly top\top1.jpg"></a></div>
+        <div class="desc">Weekly Top:English...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\weekly top\weekly-top-punjabi.html"><img src="D:\practice\Ganna World\weekly top\top2.jpg"></a></div>
+    <div class="desc">Weekly Top:Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\weekly top\weekly-top-bengali.html"><img src="D:\practice\Ganna World\weekly top\top3.jpg"></a></div>
+<div class="desc">Weekly Top:Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\weekly top\weekly-top-hindi.html"><img src="D:\practice\Ganna World\weekly top\top4.jpg"></a></div>
+<div class="desc">Weekly Top:Hindi...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\weekly top\weekly-top-tamil.html"><img src="D:\practice\Ganna World\weekly top\top5.webp"></a></div>
+<div class="desc">Retro Top:Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Romantic Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="D:\practice\Ganna World\romantic song\english.jpg"></div>
+        <div class="desc">English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\romantic song\hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\romantic song\bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\romantic song\punjabi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\romantic song\tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Sad Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="D:\practice\Ganna World\sad\english.webp"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\sad\hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\sad\bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\sad\punjabi.webp"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\sad\tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Album Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="D:\practice\Ganna World\album\english.jpg"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\album\hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\album\bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\album\punjabi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\album\tamil1.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Artist Song</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><img src="D:\practice\Ganna World\artist\english.jpg"></div>
+        <div class="desc">New English...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\artist\hindi.jpg"></div>
+    <div class="desc">New Hindi</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\artist\bengali.jpg"></div>
+<div class="desc">New Bengali...</div>
+</div>
+<div class="box">
+    <div class="photo"><img src="D:\practice\Ganna World\artist\punjabi.jpg"></div>
+<div class="desc">New Punjabi...</div>
+</div>
+<div class="box">
+<div class="photo"><img src="D:\practice\Ganna World\artist\tamil.jpg"></div>
+<div class="desc">New Tamil...</div>
+</div>
+</main>
+<br>
+<header>
+    <h4>Videos</h4>
+</header>
+<main>
+    <div class="box">
+        <div class="photo"><a href="D:\practice\Ganna World\video page\english.html"><img src="D:\practice\Ganna World\video page\english.jpg"></a></div>
+        <div class="desc">English Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\video page\hindi.html"><img src="D:\practice\Ganna World\video page\hindi.png"></a></div>
+    <div class="desc">Hindi Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\video page\bengali.html"><img src="D:\practice\Ganna World\video page\bengali.jpg"></a></div>
+<div class="desc">Bengali Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\video page\punjabi.html"><img src="D:\practice\Ganna World\video page\punjabi.png"></a></div>
+<div class="desc">Punjabi Music Video...</div>
+</div>
+<div class="box">
+    <div class="photo"><a href="D:\practice\Ganna World\video page\tamil.html"><img src="D:\practice\Ganna World\video page\tamil.png"></a></div>
+<div class="desc">Tamil Music Video...</div>
+</div>
+</main>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="end">
+    <center><h1>Quicklinks</h1></center>
+<table width="100%" height="250px">
+    <tr>
+        <td>LANGUAGES</td>
+        <td>GENRES</td>
+        <td>TOP ARTISTS</td>
+        <td>LYRICS</td>
+    </tr>
+    <tr>
+        <td class="list">
+            <a href="D:\practice\Ganna World\new releases\new-english.html">English</a><br>
+            <a href="D:\practice\Ganna World\new releases\new-hindi.html">Hindi</a><br>
+            <a href="D:\practice\Ganna World\new releases\new-bengali.html">Bengali</a><br>
+            <a href="D:\practice\Ganna World\new releases\new-punjabi.html">Punjabi</a><br>
+            <a href="D:\practice\Ganna World\new releases\new-tamil.html">Tamil</a><br>
+        </td>
+        <td class="list">
+            <a href="#">Bollywood Song</a><br>
+            <a href="#">Kind Song</a><br>
+            <a href="#">Rock Song</a><br>
+            <a href="#">Bhajan</a><br>
+            <a href="#">Love Song</a><br>            
+        </td>    
+        <td class="list">
+            <a href="#">Arijit Songs</a><br>
+            <a href="#">Naha Kakkar</a><br>
+            <a href="#">Honey Sing</a><br>
+            <a href="#">Guru Randhwan</a><br>
+            <a href="D:\practice\Ganna World\best of anupam\anupam.html">Anupam Roy</a><br>
+        </td>      
+        <td class="list">
+            <a href="#">Shiva Tandav</a><br>
+            <a href="#">Gayatri Mantra</a><br>
+            <a href="#">Laxmi Ji Arti</a><br>
+            <a href="#">Perfect Lyrics</a><br>
+            <a href="#">Memoris Lyrics</a><br>           
+        </td>            
+    </tr>
+</table>
+</div>
+    </body>
+</html>
